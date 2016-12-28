@@ -1,0 +1,6 @@
+  <h1>Angular2 HTTP Demo App</h1>
+  <h2>Foods</h2>
+  <div *ngIf="foods_error">An error occurred while loading the foods!</div>
+  <ul>
+    <li *ngFor="let food of foods">{{food.name}}</li>
+  </ul>
