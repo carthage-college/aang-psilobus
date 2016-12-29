@@ -3,8 +3,8 @@ import { DemoService } from './demo.service';
 import { Observable } from 'rxjs/Rx';
 
 @Component({
-  selector: 'demo-app',
-  templateUrl: 'templates/app.component.tpl.html',
+  selector: 'course-syllabi',
+  templateUrl: 'app/app.component.tpl.html',
 })
 export class AppComponent  {
 

@@ -10,6 +10,6 @@ export class DemoService {
 
     // Uses http.get() to load a single JSON file
     getFoods() {
-        return this.http.get('/app/food.json').map((res:Response) => res.json());
+        return this.http.get('/mathematics/courses/syllabi/app/food.json').map((res:Response) => res.json());
     }
 }
