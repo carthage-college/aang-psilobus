@@ -1,6 +1,50 @@
   <h1>Course Syllabi</h1>
   <h2>Mathematics</h2>
-  <div *ngIf="foods_error">An error occurred while loading the foods!</div>
-  <ul>
-    <li *ngFor="let food of foods">{{food.name}}</li>
-  </ul>
+  <div *ngIf="courses_error">An error occurred while loading the courses...</div>
+  <table class="table table-striped table-bordered table-hover
+    dataTable display courses-data" id="courses">
+    <thead>
+      <tr>
+        <th style="text-align:center;">Title</th>
+        <th style="text-align:center;">Number</th>
+        <th style="text-align:center;">Sec.</th>
+        <th style="text-align:center;">Sess.</th>
+        <th style="text-align:center;">Instructor</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let c of foods">
+      <td [ngSwitch]="c.need_syllabi">
+        <div *ngSwitchCase="'Y'">
+        <a href="{{c.earl}}" title="{{c.crs_title}}">
+          {{c.crs_title}}
+        </a>
+        </div>
+        <div *ngSwitchDefault>
+          {{c.crs_title}}
+        </div>
+      </td>
+      <td>
+      {{c.crs_no}}
+      </td>
+      <td>
+      {{c.sec_no}}
+      </td>
+      <td>
+      {{c.sess}}
+      </td>
+      <td>
+      {{c.fullname}}
+      </td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th style="text-align:center;">Title</th>
+        <th style="text-align:center;">Number</th>
+        <th style="text-align:center;">Sec.</th>
+        <th style="text-align:center;">Sess.</th>
+        <th style="text-align:center;">Instructor</th>
+      </tr>
+    </tfoot>
+  </table>
