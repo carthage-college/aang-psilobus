@@ -29,7 +29,7 @@ div.table-title {
 }
 th {
   color:#D5DDE5;;
-  background:#1b1e24;
+  background:#003c4b;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
   font-size:23px;
@@ -108,4 +108,7 @@ td.text-center {
 }
 td.text-right {
   text-align: right;
+}
+#main-page-section {
+    margin-bottom: 20px;
 }
