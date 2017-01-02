@@ -1,7 +1,0 @@
-//
-// Global variables
-//
-
-'use strict';
-
-export var root_url='/';
