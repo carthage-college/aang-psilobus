@@ -1,0 +1,12 @@
+//
+// Global variables
+//
+
+'use strict';
+
+export const term=''
+export const dept=''
+export const year=''
+export const server_url='https://localhost';
+export const root_uri = '/djpsilobus/dspace/';
+export const rest_url=server_url + root_uri + dept + '/' + term + '/' + year + '/courses/';
